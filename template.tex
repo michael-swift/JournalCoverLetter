@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[bottom=1in, left=1in, right=1in, top=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{titlesec}
 \usepackage{textcomp} % For the bullet point symbol
@@ -26,17 +26,17 @@
 \setcounter{secnumdepth}{0}
 
 \begin{document}
-
+\newgeometry{top=0.1in} % Set the top margin for the first page only
 % No title, author, or date in the header
 \noindent
-\begin{minipage}[t]{0.35\textwidth}
+\begin{minipage}[t]{0.18\textwidth}
 \vspace{0pt} % Ensures that the top of the image aligns with the top of the text
 \includegraphics[width=\linewidth]{logos/DALLE_logo.png} % University logo
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.6\textwidth}
-\vspace{0pt} % Ensures that the top of the text aligns with the top of the image
-{\color{gray}\LARGE Departments of Science 1 and Science 2\color{black}\small\newline 300 E Campus Drive \mybullet Stanford, CA, 94025 \mybullet USA}
+\begin{minipage}[t]{0.7\textwidth}
+\vspace{25pt} % To adjust the text for minipage 2
+{\color{gray}\LARGE Departments of Science 1 and Science 2\color{black}\small\newline 666 E Campus Drive \mybullet Collegetown, CA, 90XXX \mybullet USA}
 % Additional details here
 \end{minipage}
 
@@ -50,7 +50,7 @@
 \noindent Please find enclosed our manuscript entitled ``Lorem Ipsum Dolor: Consectetuer Adipiscing Elit" which we are submitting for consideration for publication in \textit{\journalname}.
 
 \section{}
-\noindent In recent years, \lipsum[1] 
+\noindent In recent years, it has become clear this line of research is necessary. \lipsum[1] 
 
 \section{}
 \noindent Our approach represents the first time a group has generated data that would allow exploration of a variety of questions. The most salient of which we explore here: 
@@ -64,14 +64,21 @@ In our study, we present evidence that supports Model 1 \citep{zany2023quantum} 
   \item[(3)] Finally, it is abundantly clear from our findings that competing labs have not considered...
 \end{description}
 
+% When you are ready for the second page, restore the geometry
+\clearpage % Use this if you are done with the first page content and ready to move to the next page
+\restoregeometry % This will apply the geometry settings from the preamble for the subsequent pages
 \section{Summary of Scientific Grounds for Consideration at \journalname}
 \noindent Our is either groundbreaking and paradigm shifting or obvious. It promises to be cited in tenure dossiers for generations to come. This work is sure to bolster \textit{\journalname}'s impact factor which is really the most important thing. 
 
 \section{Summary of Appeal to a Broad Audience}
 \noindent This manuscript is not just for the high-minded academics but also has quite appealing figures to just look at, or even frame and put on your wall. 
 
+
+
+
 \section{Advice on Selecting Qualified and Fair Reviewers}
 \noindent We advise selecting reviewers who are early-career investigators as they likely will actually read the manuscript and provide substantive feedback. Our last manuscript was under review for 12 months, after which time Reviewer 2 died at age 95.
+
 
 \section{Items Included in This Submission}
 \noindent Included with our manuscript is a Supplementary Information section that is so detailed, it could be another whole paper. We also enclosed a couple amazon gift cards for the editors. 
