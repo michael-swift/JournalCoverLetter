@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{textcomp} % For the bullet point symbol
+\usepackage{lipsum}
+\usepackage{enumitem} % For customizing list items
+\usepackage{xcolor} % For text color
+\usepackage{natbib}
+
+\setcitestyle{aysep={,}} % Set author-year separator to comma
+
+% Define the journal name command
+\newcommand{\journalname}{Journal of High Impact Research} % Set the journal name here
+
+\bibliographystyle{plainnat} % Use the plainnat style or another that you prefer
+
+% Define a bullet with some horizontal spacing
+\newcommand{\mybullet}{\textbullet\hspace{0.5em}}
+
+% Customize the section titles to be bold and have no numbering
+\titleformat{\section}
+  {\normalfont\bfseries}{\thesection}{1em}{}
+
+% Removes numbering from sections
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+% No title, author, or date in the header
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+\vspace{0pt} % Ensures that the top of the image aligns with the top of the text
+\includegraphics[width=\linewidth]{stanford_logos/SUSig_Seal_Stacked_Left.eps} % University logo
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+\vspace{0pt} % Ensures that the top of the text aligns with the top of the image
+{\color{gray}\LARGE Departments of Science 1 and Science 2\color{black}\small\newline 300 E Campus Drive \mybullet Stanford, CA, 94025 \mybullet USA}
+% Additional details here
+\end{minipage}
+
+\vspace{1em} % Space between header and rule
+\noindent\rule{\linewidth}{1pt} % Horizontal rule
+\bigskip
+
+% Opening salutation
+\noindent Dear Editors,
+
+\noindent Please find enclosed our manuscript entitled ``Lorem Ipsum Dolor: Consectetuer Adipiscing Elit" which we are submitting for consideration for publication in \textit{\journalname}.
+
+\section{}
+\noindent In recent years, \lipsum[1] 
+
+\section{}
+\noindent Our approach represents the first time a group has generated data that would allow exploration of a variety of questions. The most salient of which we explore here: 
+
+\section{}
+In our study, we present evidence that supports Model 1 \citep{zany2023quantum} over Model 2 \citep{wacky2023spaghetti}, which is significant for several reasons:
+
+\begin{description}
+  \item[(1)] We observe Y, which aligns with groups A and B but not C in their model system. Notably, our model system is far more relevant for reasons including...
+  \item[(2)] We also comment on X, which has long been a mystery unsolved by any group but ours, thanks to our unique dataset.
+  \item[(3)] Finally, it is abundantly clear from our findings that competing labs have not considered...
+\end{description}
+
+\section{Summary of Scientific Grounds for Consideration at \journalname}
+\noindent Our is either groundbreaking and paradigm shifting or obvious. It promises to be cited in tenure dossiers for generations to come. This work is sure to bolster \textit{\journalname}'s impact factor which is really the most important thing. 
+
+\section{Summary of Appeal to a Broad Audience}
+\noindent This manuscript is not just for the high-minded academics but also has quite appealing figures to just look at, or even frame and put on your wall. 
+
+\section{Advice on Selecting Qualified and Fair Reviewers}
+\noindent We advise selecting reviewers who are early-career investigators as they likely will actually read the manuscript and provide substantive feedback. Our last manuscript was under review for 12 months, after which time Reviewer 2 died at age 95.
+
+\section{Items Included in This Submission}
+\noindent Included with our manuscript is a Supplementary Information section that is so detailed, it could be another whole paper. We also enclosed a couple amazon gift cards for the editors. 
+
+%\bibliographystyle{Science}
+
+%This is where your bibliography is generated. Make sure that your .bib file is actually called library.bib
+\bibliography{bib}
+
+\end{document}
