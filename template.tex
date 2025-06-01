@@ -15,7 +15,7 @@
 \titlespacing*{\subsubsection}{0pt}{1ex}{0.01ex}
 
 
-% Define the journal name command
+% CUSTOMIZE: Change the journal name here
 \newcommand{\journalname}{Journal of Discoveries} % Set the journal name here
 \bibliographystyle{plainnat} % Use the plainnat style or another that you prefer
 % Define a bullet with some horizontal spacing
@@ -30,34 +30,33 @@
 \begin{document}
 
 % No title, author, or date in the header
-% No title, author, or date in the header
 \noindent
 \begin{minipage}[t]{0.15\textwidth}
 \vspace*{-2.8cm} % Adjust the value as needed
 %\vspace{0pt} % Ensures that the top of the image aligns with the top of the text
-\includegraphics[width=\linewidth]{logos/DALLE_logo.png} % University logo
+\includegraphics[width=\linewidth]{logos/DALLE_logo.png} % CUSTOMIZE: Replace with your institution's logo
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.6\textwidth}
 \vspace*{-2.2cm} % Adjust the value as needed
 %\vspace{35pt} % Ensures that the top of the text aligns with the top of the image
-{\color{black} Departments of Applied Psychics and Enginesteering\color{mygray}\small\newline 666 E Campus Drive \mybullet Stamford, CA, 94625 \mybullet USA}
+{\color{black} Departments of Applied Physics and Engineering\color{mygray}\small\newline 666 E Campus Drive \mybullet Stamford, CA, 94625 \mybullet USA} % CUSTOMIZE: Update with your department and address
 % Additional details here
 \end{minipage}
 
 % Add vertical space to position the horizontal line just below the picture minipage
 % Adjust this space as needed to align the line correctly
-\vspace{-0cm} % Example value, adjust as necessary
+\vspace{0.5cm} % Adjust vertical spacing as needed
 
 \noindent\rule{\linewidth}{1.2pt} % Horizontal rule
 \bigskip
-% Opening salutation
+% CUSTOMIZE: Change recipient (Dear Editor, Dear Dr. Smith, etc.)
 \noindent Dear [Editor(s)],
 
-\noindent Please find enclosed our manuscript entitled ``Lorem Ipsum Dolor: Consectetuer Adipiscing Elit" which we are submitting for consideration for publication in \textit{\journalname}.
+\noindent Please find enclosed our manuscript entitled ``Lorem Ipsum Dolor: Consectetuer Adipiscing Elit" which we are submitting for consideration for publication in \textit{\journalname}. % CUSTOMIZE: Update manuscript title
 
 \subsubsection{}
-\noindent In recent years, it has become clear this line of research is necessary. \lipsum[1] 
+\noindent In recent years, it has become clear this line of research is necessary. \lipsum[1] % CUSTOMIZE: Replace with your research background 
 
 \subsubsection{}
 \noindent Our approach represents the first time a group has generated data that would allow exploration of a variety of questions. The most salient of which we explore here: 
@@ -73,11 +72,11 @@ In our study, we present evidence that supports Model 1 \citep{zany2023quantum} 
 
 % When you are ready for the second page, restore the geometry
 \subsubsection*{Summary of Scientific Grounds for Consideration at \journalname}
-\noindent Our is either groundbreaking and paradigm shifting or obvious. It promises to be cited in tenure dossiers for generations to come. This work is sure to bolster \textit{\journalname}'s impact factor which is really the most important thing. 
+\noindent Our work is either groundbreaking and paradigm shifting or obvious. It promises to be cited in tenure dossiers for generations to come. This work is sure to bolster \textit{\journalname}'s impact factor which is really the most important thing. 
 
 \subsubsection*{Summary of Appeal to a Broad Audience}
 \noindent This manuscript is not just for the high-minded academics but also has quite appealing figures to just look at, or even frame and put on your wall.
-\subsubsection*{We suggest the following qualified reviewers}
+\subsubsection*{We suggest the following qualified reviewers} % CUSTOMIZE: Add your suggested reviewers
 \begin{multicols}{2}
 
 \noindent Alex Harmon, Crescent Research Center\\
@@ -92,18 +91,18 @@ Casey Blake, Emerald City University\\
 Dakota Lee, Pacific Northwest University\\
 \end{multicols}
 \vspace{-0.75cm}
-\subsubsection*{We advise against selecting the following conflicted reviewers}
+\subsubsection*{We advise against selecting the following conflicted reviewers} % CUSTOMIZE: List conflicted reviewers
 \noindent Sam Taylor, Greenfield Genome Center\\
 Alex Kennedy, BioFuture Labs
 
 \subsubsection{Items Included in This Submission}
-\noindent Included with our manuscript is a Supplementary Information section that is so detailed, it could be another whole paper. We also enclosed a couple amazon gift cards for the editors. 
+\noindent Included with our manuscript is a Supplementary Information section that is so detailed, it could be another whole paper. We also enclosed supplementary data files for the editors. 
 
 %\bibliographystyle{Science}
 \subsubsection{}
-Warmest Regards,
+Warmest Regards, % CUSTOMIZE: Change closing and add your name
 \newline
 Author(s)
-%This is where your bibliography is generated. Make sure that your .bib file is actually called library.bib
+% Bibliography will be generated here if you add \bibliography{bib} command
 
 \end{document}
